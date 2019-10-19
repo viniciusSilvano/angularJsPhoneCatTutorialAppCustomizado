@@ -1,0 +1,30 @@
+{
+  "name": "angularjstutorial",
+  "version": "1.0.0",
+  "description": "criando meu proprio angularjs tutorial app",
+  "main": "app.module.js",
+  "dependencies": {
+    "angular": "^1.6.10"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.10",
+    "jasmine": "^3.5.0",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^2.0.1",
+    "protractor": "^5.4.2"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusSilvano/angularJsPhoneCatTutorialApp.git"
+  },
+  "author": "Vinicius Silvano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusSilvano/angularJsPhoneCatTutorialApp/issues"
+  },
+  "homepage": "https://github.com/viniciusSilvano/angularJsPhoneCatTutorialApp#readme"
+}
