@@ -4,7 +4,7 @@ component('phoneList',{
     // Note: The URL is relative to our 'index.html' file
     templateUrl: "app/phone-list/phone-list.template.html",
     controller: ['$http','$scope', 'phonesFactory', function PhoneListController($http,$scope,phonesFactory){
-        var PhoneListController = this;
+        let PhoneListController = this;
         PhoneListController.orderProp = 'age';
        /* $http.get('../phones/phones.json').then(function(response){
             PhoneListController.phones = response.data;
