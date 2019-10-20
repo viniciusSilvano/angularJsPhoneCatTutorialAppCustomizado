@@ -12,7 +12,7 @@ component('phoneList',{
         //PhoneListController.phones = phonesFactory;
         phonesFactory.getPhones().then(function(resultado){
             console.log(resultado);
-            $scope.phones = resultado;
+            PhoneListController.phones = resultado;
             $scope.$apply();
         });
     }]
