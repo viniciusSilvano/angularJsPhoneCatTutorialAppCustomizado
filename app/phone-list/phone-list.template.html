@@ -2,16 +2,28 @@
     <div class="row">
         <div class="col-md-2">
         <!--Sidebar content-->
+        <p>
+            Search: <input ng-model="$ctrl.query"/>
+        </p>
+
+        <p>
+            Sort by:
+            <select ng-model="$ctrl.orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="age">Newest</option>
+            </select>
+        </p>
         </div>
-        <div class="col-md-10">
+    </div>
+    <div class="col-md-10">
         <!--Body content-->
-            <ul>
-                <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query">
-                    <span>{{phone.name}}</span>
+        <ul class="phones">
+            <li ng-repeat="phone in phones | filter:$ctrl.query |
+                orderBy:$ctrl.orderProp">
+                <span>{{phone.name}}</span>
                     <p>{{phone.snippet}}</p>
-                </li>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </div>
 </div>
 
