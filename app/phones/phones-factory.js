@@ -1,6 +1,6 @@
 angular
 .module('phones')
-.factory('phonesFactory',[function(){
+.factory('getPhonesFactory',[function(){
         let listOfPhones = Promise.resolve([
             {
                 "age": 0, 
