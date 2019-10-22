@@ -1,16 +1,26 @@
 <html ng-app="phonecatApp">
     <head>
         <meta charset="UTF-8"/>
+        <!--Angular-->
         <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-route/angular-route.min.js"></script>
+        <!--bootstrap-->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!--Modules-->
         <script src="app.module.js"></script>
         <script src="app/phone-list/phone-list.module.js"></script>
-        <script src="app/phone-list/phone-list.component.js"></script>
+        <script src="phone-detail/phone-detail.module.js"></script>
         <script src="app/phones/phones-objects-module.js"></script>
+        <!--Components-->
+        <script src="app/phone-list/phone-list.component.js"></script>
+        <script src="phone-detail/phone-detail.component.js"></script>
+        <!--Factory-->
         <script src="app/phones/phones-factory.js"></script>
     </head>
     <body> 
         <h1>Hello World</h1>
-        <phone-list></phone-list>
+        <div ng-view>
+
+        </div>
     </body>
 </html>
