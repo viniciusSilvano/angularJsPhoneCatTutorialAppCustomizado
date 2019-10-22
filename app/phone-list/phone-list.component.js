@@ -6,6 +6,7 @@ component('phoneList',{
     controller: ['$http','$scope', 'getPhonesFactory', function PhoneListController($http,$scope,getPhonesFactory){
         let PhoneListController = this;
         PhoneListController.orderProp = 'age';
+        
        /* $http.get('../phones/phones.json').then(function(response){
             PhoneListController.phones = response.data;
         })*/
@@ -13,6 +14,7 @@ component('phoneList',{
         getPhonesFactory.getPhones().then(function(resultado){
             console.log(resultado);
             PhoneListController.phones = resultado;
+            PhoneListController.estilo = "red";
             $scope.$apply();
         });
     }]

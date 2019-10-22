@@ -17,7 +17,8 @@
     "protractor": "^5.4.2"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "serve": "serve"
   },
   "repository": {
     "type": "git",
