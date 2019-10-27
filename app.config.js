@@ -2,18 +2,8 @@ angular
 .module('phonecatApp')
 .config(['$locationProvider', '$routeProvider',
     function config($locationProvider,$routeProvider){
-        $locationProvider.hasPrefix('!');
+       // $locationProvider.hasPrefix('!');
 
-<<<<<<< Updated upstream
-        $routeProvider
-            .when('/phones', {
-                template: '<phone-list></phone-list>'
-            })
-            .when('/phones/:phoneId',{
-                template: '<phone-detail></phone-detail>'    
-            })
-            .otherwise('/phones');
-=======
       $routeProvider.
         when('/phones', {
           template: '<phone-list></phone-list>'
@@ -21,10 +11,10 @@ angular
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
         }).
-        /*when('/teste',{
-          template: '<teste></teste>'
-        }).*/
+        when('/teste',{
+          template: '<teste></teste>',
+          css: 'teste/teste.css'
+        }).
         otherwise('/phones');
->>>>>>> Stashed changes
     }
 ]);
