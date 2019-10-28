@@ -1,6 +1,8 @@
 
-<link rel="stylesheet" ng-href="{{css}}">
+<link rel="stylesheet" ng-href="{{$ctrl.css}}">
 
-<div class="teste">Hover over me
-  <span >Tooltip text</span>
-</div>
+<button  ng-click="$ctrl.MostrarToolTip(true)">Hover over me
+    <span id="tooltipText" ng-show="$ctrl.mostrar" ng-class="{'tooltiptext' : $ctrl.mostrar === true, '' : $ctrl.mostrar === false}">Tooltip text</span>
+</button>
+
+
