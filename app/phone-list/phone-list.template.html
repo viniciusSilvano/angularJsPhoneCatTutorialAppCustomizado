@@ -8,17 +8,26 @@
 
         <p>
             Sort by:
-            <select ng-model="$ctrl.orderProp">
+            <!--<select ng-model="$ctrl.orderProp">
                 <option value="name">Alphabetical</option>
                 <option value="age">Newest</option>
-            </select>
+            </select>-->
+            <input type="text" 
+            ng-model="$ctrl.selected" 
+            placeholder="Locations loaded via $http" 
+            uib-typeahead="phone as phone.name for phone in $ctrl.getPhonesAutoComplete 
+            | limitTo:8
+            | filter:{name:$ctrl.selected}" 
+            typeahead-loading="" 
+            class="form-control">
         </p>
         </div>
+
     </div>
     <div class="col-md-10">
         <!--Body content-->
         <ul class="phones">
-            <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query |
+            <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.selected |
                 orderBy:$ctrl.orderProp" class="thumbnail">
                 <a href="#/phones/{{phone.id}}" class="thumb">
                     <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}"/>

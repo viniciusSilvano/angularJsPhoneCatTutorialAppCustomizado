@@ -6,5 +6,6 @@ angular.module('phonecatApp', [
     'phoneDetail',
     'phoneList',
     'phones',
+    'ui.bootstrap',
     'teste'
 ]);

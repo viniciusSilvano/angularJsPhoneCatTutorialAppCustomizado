@@ -6,6 +6,7 @@
   "dependencies": {
     "angular": "^1.6.10",
     "angular-route": "^1.6.10",
+    "angular-ui-bootstrap": "^2.5.6",
     "bootstrap": "^4.3.1"
   },
   "devDependencies": {
