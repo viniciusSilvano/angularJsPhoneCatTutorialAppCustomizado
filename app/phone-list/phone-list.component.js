@@ -4,6 +4,7 @@
     module('phonecatApp.phoneList').
     component('phonecatApp.phoneList',{
         // Note: The URL is relative to our 'index.html' file
+        controllerAs: 'PhoneList',
         templateUrl: "app/phone-list/phone-list.template.html",
         controller: ['$http','$scope', 'getPhonesFactory', 
         function PhoneListController($http,$scope,getPhonesFactory){
