@@ -1,3 +1,6 @@
-angular.module('phoneDetail',[
-    'ngRoute'
-]);
+(function(){
+    'use strict';
+    angular.module('phoneDetail',[
+        'ngRoute'
+    ]);
+})();

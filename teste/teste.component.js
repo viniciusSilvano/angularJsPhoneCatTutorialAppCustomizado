@@ -13,12 +13,11 @@ angular
         console.log(self.mostrar);
         self.MostrarToolTip = function (valor){
             console.log('entrou');
-            if(self.mostrar === true){
-                self.mostrar = false;
-            }else{
-                self.mostrar = true;
-            }
+            self.mostrar = !self.mostrar;
             $scope.$apply;
+            let testeModel = new testeModel();
+            console.log(testeModel);
+            testeModel.meuAlert;
         }
         /*self.everywhere.bind('click', function(event){
             console.log(angular.element(document).find('#tooltipText'));

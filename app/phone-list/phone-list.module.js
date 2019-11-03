@@ -1,1 +1,3 @@
-angular.module('phoneList', ['phones']);
+(function(){
+    angular.module('phoneList', ['phones']);
+})();

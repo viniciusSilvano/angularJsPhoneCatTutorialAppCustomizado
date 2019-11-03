@@ -1,1 +1,4 @@
-angular.module('phones',[]);
+(function(){
+    'use strict';
+    angular.module('phones',[]);
+})();
