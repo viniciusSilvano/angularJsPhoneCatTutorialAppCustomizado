@@ -6,13 +6,13 @@ angular
 
       $routeProvider.
         when('/phones', {
-          template: '<phone-list></phone-list>'
+          template: '<phonecat-app.phone-list></phonecat-app.phone-list>'
         }).
         when('/phones/:phoneId', {
-          template: '<phone-detail></phone-detail>'
+          template: '<phonecat-app.phone-detail></phonecat-app.phone-detail>'
         }).
         when('/teste',{
-          template: '<teste></teste>',
+          template: '<phonecat-app.teste></phonecat-app.teste>',
           css: 'teste/teste.css'
         }).
         otherwise('/phones');

@@ -1,4 +1,4 @@
 (function(){
     'use strict';
-    angular.module('phones',[]);
+    angular.module('phonecatApp.phones',[]);
 })();

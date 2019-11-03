@@ -1,7 +1,7 @@
 (function(){
     'use strict';
     angular
-    .module('phones')
+    .module('phonecatApp.phones')
     .factory('getPhonesFactory',[function(){
             let listOfPhones = Promise.resolve([
                 {

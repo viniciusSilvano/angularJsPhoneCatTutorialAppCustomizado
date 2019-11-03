@@ -1,8 +1,8 @@
 (function(){
     'use strict';
     angular
-    .module('phoneDetail')
-    .component('phoneDetail',{
+    .module('phonecatApp.phoneDetail')
+    .component('phonecatApp.phoneDetail',{
         templateUrl: 'phone-detail/phone-detail.template.html',
         controller: ['$http','$routeParams','$scope',
             function PhoneDetailController($http,$routeParams,$scope){

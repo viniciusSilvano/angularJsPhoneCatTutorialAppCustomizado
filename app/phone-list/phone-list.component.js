@@ -1,11 +1,12 @@
 (function(){
 'use strict';
     angular.
-    module('phoneList').
-    component('phoneList',{
+    module('phonecatApp.phoneList').
+    component('phonecatApp.phoneList',{
         // Note: The URL is relative to our 'index.html' file
         templateUrl: "app/phone-list/phone-list.template.html",
-        controller: ['$http','$scope', 'getPhonesFactory', function PhoneListController($http,$scope,getPhonesFactory){
+        controller: ['$http','$scope', 'getPhonesFactory', 
+        function PhoneListController($http,$scope,getPhonesFactory){
                 let PhoneListController = this;
                 PhoneListController.orderProp = 'age';
                 PhoneListController.selected;

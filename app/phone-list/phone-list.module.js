@@ -1,3 +1,3 @@
 (function(){
-    angular.module('phoneList', ['phones']);
+    angular.module('phonecatApp.phoneList', ['phonecatApp.phones']);
 })();

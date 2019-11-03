@@ -1,3 +1,3 @@
-angular.module('teste',[
+angular.module('phonecatApp.teste',[
     'ngRoute'
 ]);
