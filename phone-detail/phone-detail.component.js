@@ -5,17 +5,19 @@
     .component('phonecatApp.phoneDetail',{
         controllerAs: 'phoneDetail',
         templateUrl: 'phone-detail/phone-detail.template.html',
-        controller: ['$http','$routeParams','$scope',
-            function PhoneDetailController($http,$routeParams,$scope){
+        controller: ['$scope','PhoneDetailFactory',
+            function PhoneDetailController($scope,PhoneDetailFactory){
                 var self = this;
                 self.phone; 
-                $http.get('app/phones-data/' + $routeParams.phoneId +
-                '.json').then(function(response){
-                        console.log('recebeu o request');
-                        self.phone = response.data;
-                        console.log(self.phone);
-                        $scope.$apply;
-                });
+                getPhoneDetail();
+                function getPhoneDetail(){
+                    console.log('dados da factory:');
+                    PhoneDetailFactory.getPhoneDetail()
+                        .then(function(response){
+                            self.phone = response;
+                        });
+                    $scope.$apply;
+                }
             }
         ]
     });
