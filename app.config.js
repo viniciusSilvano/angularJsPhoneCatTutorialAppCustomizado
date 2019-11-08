@@ -2,7 +2,7 @@ angular
 .module('phonecatApp')
 .config(['$locationProvider', '$routeProvider',
     function config($locationProvider,$routeProvider){
-       // $locationProvider.hasPrefix('!');
+      $locationProvider.html5Mode(true).hashPrefix('!');
 
       $routeProvider.
         when('/phones', {

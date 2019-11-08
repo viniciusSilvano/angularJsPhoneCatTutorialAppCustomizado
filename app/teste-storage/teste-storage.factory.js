@@ -1,0 +1,18 @@
+(function(){
+    'use strict';
+    angular
+    .module('phonecatApp.phoneList')
+    .factory('getTesteStorage',['$window',function($window){
+        function teste(){
+            $window.sessionStorage.setItem("SavedString",JSON.stringify("I'm a value saved with SessionStorage"));
+            $window.sessionStorage.setItem("SavedObject",JSON.stringify({teste: 'teste'}));
+
+            console.log('SavedString: ',$window.sessionStorage.getItem("SavedString"));
+            console.log('SavedObject: ', $window.sessionStorage.getItem("SavedObject"));
+        }
+                
+        return{
+            teste: teste
+        }
+    }]);
+})();
