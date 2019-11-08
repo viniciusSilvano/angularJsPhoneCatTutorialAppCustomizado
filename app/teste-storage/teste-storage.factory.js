@@ -9,6 +9,19 @@
 
             console.log('SavedString: ',$window.sessionStorage.getItem("SavedString"));
             console.log('SavedObject: ', $window.sessionStorage.getItem("SavedObject"));
+            let testeObj = $window.sessionStorage.getItem("SavedObject");
+            if(!typeof testeObj == 'object'){
+                console.log('não é objeto');
+            }
+            if(typeof testeObj == 'string'){
+                console.log('é um texto');
+            }
+            testeObj = JSON.parse(testeObj);
+            if(typeof testeObj == 'object'){
+                console.log('é objeto');
+            }
+            testeObj.teste = 'mudei o nome do teste';
+            console.log(testeObj.teste);
         }
                 
         return{
