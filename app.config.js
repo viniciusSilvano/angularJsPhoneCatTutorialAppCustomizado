@@ -15,6 +15,9 @@ angular
           template: '<phonecat-app.teste></phonecat-app.teste>',
           css: 'teste/teste.css'
         }).
+        when('/mainteste',{
+          template: '<phonecat-app.main-test></phonecat-app.main-test>'
+        }).
         otherwise('/phones');
     }
 ]);

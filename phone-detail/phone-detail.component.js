@@ -10,8 +10,12 @@
                 var self = this;
                 self.phone; 
                 getPhoneDetail();
+
+                self.setImage = function setImage(imageUrl){
+                    self.mainImageUrl = imageUrl;
+                };
+
                 function getPhoneDetail(){
-                    console.log('dados da factory:');
                     PhoneDetailFactory.getPhoneDetail()
                         .then(function(response){
                             self.phone = response;

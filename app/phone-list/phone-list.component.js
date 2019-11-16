@@ -6,19 +6,20 @@
         // Note: The URL is relative to our 'index.html' file
         controllerAs: 'PhoneList',
         templateUrl: "app/phone-list/phone-list.template.html",
-        controller: ['$http','$scope', 'getPhonesFactory','$injector',
-        function PhoneListController($http,$scope,getPhonesFactory,$injector){
+        controller: ['$http','$scope', 'getPhonesFactory','$injector','Phone',
+        function PhoneListController($http,$scope,getPhonesFactory,$injector,Phone){
                 let PhoneListController = this;
+                PhoneListController.phones = Phone.query();
                 PhoneListController.orderProp = 'age';
                 PhoneListController.selected;
                 PhoneListController.phones;
-            /* $http.get('../phones/phones.json').then(function(response){
-                    PhoneListController.phones = response.data;
-                })*/
-                //PhoneListController.phones = phonesFactory;
-                let getTesteStorage = $injector.get('getTesteStorage');
                 PhoneListController.getPhonesAutoComplete;
+
+                //Teste storage
+                let getTesteStorage = $injector.get('getTesteStorage');
                 getTesteStorage.teste();
+
+                /* forma antiga de recuperar os phones agora eu uso rest
                 getPhonesFactory.getPhones().then(function(resultado){
                     console.log(resultado);
                     PhoneListController.phones = resultado;
@@ -26,8 +27,9 @@
                     PhoneListController.estilo = "red";
                     $scope.$apply();
                 });
+                */      
+               
 
-                console.log(PhoneListController.phones);
                 
         }]
     });

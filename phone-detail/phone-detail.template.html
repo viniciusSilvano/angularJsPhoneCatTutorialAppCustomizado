@@ -22,5 +22,13 @@
     <li>
         <span>Additional Features</span>
         <dd>{{phoneDetail.phone.additionalFeatures}}</dd>
-    </li>        
+    </li>    
+    <li>
+        <dl>
+            <dt>Infrared</dt>
+            <dd>{{phoneDetail.phone.connectivity.infrared | checkmark}}</dd>
+            <dt>GPS</dt>
+            <dd>{{phoneDetail.phone.connectivity.gps | checkmark}}</dd>
+        </dl>
+    </li>    
 </ul>
