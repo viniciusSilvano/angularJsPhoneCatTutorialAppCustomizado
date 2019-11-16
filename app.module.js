@@ -6,5 +6,8 @@ angular.module('phonecatApp', [
     'phonecatApp.phoneDetail',
     'phonecatApp.phoneList',
     'ui.bootstrap',
-    'phonecatApp.teste'
+    //testes
+    'phonecatApp.teste',
+    'phonecatApp.mainTesteFilho',
+    'phonecatApp.mainTest'
 ]);

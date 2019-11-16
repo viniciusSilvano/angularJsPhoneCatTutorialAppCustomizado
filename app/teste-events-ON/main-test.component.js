@@ -7,9 +7,11 @@
         // Note: The URL is relative to our 'index.html' file
         controllerAs: 'MainTestController',
         templateUrl: "app/teste-events-ON/main-test.template.html",
-        controller: [
-        function MainTestController(){
-
+        controller: ['$scope',
+        function MainTestController($scope){
+            $scope.$on('eventoNoPai',function(){
+                console.log('chamando o pai');
+            });
         }]
     });
 })();

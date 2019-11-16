@@ -1,4 +1,4 @@
 (function(){
     'use strict'
-    angular.module('phonecatApp.mainTest',[]);
+    angular.module('phonecatApp.mainTest',['phonecatApp.mainTesteFilho']);
 })()

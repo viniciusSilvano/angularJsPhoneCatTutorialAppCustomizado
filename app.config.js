@@ -18,6 +18,9 @@ angular
         when('/mainteste',{
           template: '<phonecat-app.main-test></phonecat-app.main-test>'
         }).
+        when('/maintestefilho',{
+          template:'<phonecat-app.main-teste-filho></phonecat-app.main-teste-filho>'
+        }).
         otherwise('/phones');
     }
 ]);
