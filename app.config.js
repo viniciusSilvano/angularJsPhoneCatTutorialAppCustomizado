@@ -21,6 +21,9 @@ angular
         when('/maintestefilho',{
           template:'<phonecat-app.main-teste-filho></phonecat-app.main-teste-filho>'
         }).
+        when('/testediretiva',{
+          template:'<phonecat-app.teste-diretiva></phonecat-app.teste-diretiva>'
+        }).
         otherwise('/phones');
     }
 ]);

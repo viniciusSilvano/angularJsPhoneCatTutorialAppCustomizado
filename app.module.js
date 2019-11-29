@@ -9,5 +9,6 @@ angular.module('phonecatApp', [
     //testes
     'phonecatApp.teste',
     'phonecatApp.mainTesteFilho',
-    'phonecatApp.mainTest'
+    'phonecatApp.mainTest',
+    'phonecatApp.testeDiretiva'
 ]);
