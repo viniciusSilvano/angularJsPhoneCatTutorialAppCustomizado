@@ -2,7 +2,7 @@ angular
 .module('phonecatApp')
 .config(['$locationProvider', '$routeProvider',
     function config($locationProvider,$routeProvider){
-      $locationProvider.html5Mode(true).hashPrefix('!');
+      $locationProvider.html5Mode(true).hashPrefix('');
 
       $routeProvider.
         when('/phones', {
@@ -23,6 +23,9 @@ angular
         }).
         when('/testediretiva',{
           template:'<phonecat-app.teste-diretiva></phonecat-app.teste-diretiva>'
+        }).
+        when('/testeWindow',{
+          template:'<phonecat-app.window-test></phonecat-app.window-test>'
         }).
         otherwise('/phones');
     }
