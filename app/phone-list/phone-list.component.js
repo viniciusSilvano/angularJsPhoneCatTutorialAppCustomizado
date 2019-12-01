@@ -22,9 +22,14 @@
                 PhoneListController.nome = windowTestScope ? windowTestScope.nome : 'nome não definido';
                 console.log(PhoneListController.nome);*/
                 console.log($window);
+                
+                if($window.$scope){
+                    $scope.nomeTeste = $window.$scope.nomeTeste;
+                    $window.$scope = $scope;
+                    PhoneListController.nome = $scope.nomeTeste;
+                }
                 console.log($scope);
-                $scope = $window.$scope;
-                PhoneListController.nome = $scope.nomeTeste;
+                console.log(PhoneListController.nome);
                 //$window.windowTestFactory.setNome('teste shared factory');
                 //$scope.nome = $window.windowTestFactory.getNome();
                 //$scope.$watch('nome',function(newValue,oldValue){
