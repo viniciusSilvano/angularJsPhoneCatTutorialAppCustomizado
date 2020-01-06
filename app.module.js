@@ -11,5 +11,6 @@ angular.module('phonecatApp', [
     'phonecatApp.mainTesteFilho',
     'phonecatApp.mainTest',
     'phonecatApp.testeDiretiva',
-    'phonecatApp.windowTest'
+    'phonecatApp.windowTest',
+    'phonecatApp.testePaginacao'
 ]);

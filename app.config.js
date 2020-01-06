@@ -27,6 +27,9 @@ angular
         when('/testeWindow',{
           template:'<phonecat-app.window-test></phonecat-app.window-test>'
         }).
+        when('/testePaginacao',{
+          template:'<phonecat-app.teste-paginacao></phonecat-app.teste-paginacao>'
+        }).
         otherwise('/phones');
     }
 ]);
