@@ -12,5 +12,6 @@ angular.module('phonecatApp', [
     'phonecatApp.mainTest',
     'phonecatApp.testeDiretiva',
     'phonecatApp.windowTest',
+    'ngTable',
     'phonecatApp.testePaginacao'
 ]);
