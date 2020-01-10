@@ -4,6 +4,7 @@
   "description": "criando meu proprio angularjs tutorial app",
   "main": "app.module.js",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.24",
     "angular": "^1.6.10",
     "angular-resource": "^1.6.10",
     "angular-route": "^1.6.10",

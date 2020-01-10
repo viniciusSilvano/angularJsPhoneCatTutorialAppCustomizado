@@ -1,9 +1,7 @@
 angular
 .module('phonecatApp')
-.config(['$locationProvider', '$routeProvider',
-    function config($locationProvider,$routeProvider){
-      $locationProvider.html5Mode(true).hashPrefix('');
-
+.config(['$locationProvider', '$routeProvider','$stateProvider',
+    function config($locationProvider,$routeProvider,$stateProvider){
       $routeProvider.
         when('/phones', {
           template: '<phonecat-app.phone-list></phonecat-app.phone-list>'
@@ -31,5 +29,15 @@ angular
           template:'<phonecat-app.teste-paginacao></phonecat-app.teste-paginacao>'
         }).
         otherwise('/phones');
+
+        $locationProvider.html5Mode(true).hashPrefix('');
+
+        $stateProvider.state(
+          {
+            name:'testeRouteUi',
+            url:'/testerouteui',
+            template:'<h3>teste route ui</h3>'
+          }
+        );
     }
 ]);
