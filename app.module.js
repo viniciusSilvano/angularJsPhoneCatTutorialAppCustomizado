@@ -15,5 +15,6 @@ angular.module('phonecatApp', [
     'ngTable',
     'phonecatApp.testePaginacao',
     'ui.router',
-    'phonecatApp.UiRoute'
+    'phonecatApp.UiRoute',
+    'phonecatApp.testeWebSocket'
 ]);

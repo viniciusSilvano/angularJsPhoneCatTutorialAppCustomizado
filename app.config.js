@@ -28,6 +28,9 @@ angular
         when('/testePaginacao',{
           template:'<phonecat-app.teste-paginacao></phonecat-app.teste-paginacao>'
         }).
+        when('/testeWebSocket',{
+          template:'<phonecat-app.teste-web-socket></phonecat-app.teste-web-socket>'
+        }).
         otherwise('/phones');
 
         $locationProvider.html5Mode(true).hashPrefix('');

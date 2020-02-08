@@ -1,0 +1,23 @@
+<h1>Teste WebSocket</h1>
+
+<label for="nomeUsuario" >Usuário</label>
+<input ng-model="usuario" id="nomeUsuario" name="nomeUsuario" type="text"/>
+
+<button ng-click="$ctrl.criarSessao(usuario)">Conectar</button>
+<br/>
+<button ng-if="$ctrl.conectado" ng-click="$ctrl.finalizarSessao()">Finalizar Sessão</button>
+<br/>
+
+<div ng-if="$ctrl.conectado">
+    <label>Enviar Mensagem:</label>
+    <input ng-model="mensagem" type="text" id="chatInput"></input>
+    <button ng-click="$ctrl.enviarMensagem(mensagem)">Enviar</button>
+</div>
+<br/>
+
+<div ng-if="$ctrl.conectado">
+    <label for="chat">Bate-papo:</label>
+    <br/>
+    <textarea ng-model="$ctrl.chat" id="chat" disabled readonly rows="4" cols="50"></textarea>
+</div>
+
