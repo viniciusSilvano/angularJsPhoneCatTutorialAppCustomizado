@@ -4,9 +4,10 @@
   "description": "criando meu proprio angularjs tutorial app",
   "main": "app.module.js",
   "dependencies": {
-    "angular": "^1.7.9",
-    "angular-resource": "^1.7.9",
-    "angular-route": "^1.7.9",
+    "@uirouter/angularjs": "^1.0.24",
+    "angular": "^1.6.10",
+    "angular-resource": "^1.6.10",
+    "angular-route": "^1.6.10",
     "angular-ui-bootstrap": "^2.5.6",
     "bootstrap": "^4.4.1",
     "ng-table": "^3.0.1",
