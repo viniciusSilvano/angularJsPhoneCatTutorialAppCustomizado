@@ -31,6 +31,9 @@ angular
         when('/testeWebSocket',{
           template:'<phonecat-app.teste-web-socket></phonecat-app.teste-web-socket>'
         }).
+        when('/testeEditableText',{
+          template:'<phonecat-app.teste-editable-text></phonecat-app.teste-editable-text>'
+        }).
         otherwise('/phones');
 
         $locationProvider.html5Mode(true).hashPrefix('');

@@ -1,0 +1,32 @@
+<h1>Teste Editable Text</h1>
+<style>
+    .campoNome{
+        width: 25%;
+    }
+    .campoAcoes{
+        width: 75%;
+        text-align: center;
+    }
+</style>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="campoNome">nome</th>
+            <th class="campoAcoes">ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="dado in testeEditableTextController.dados">
+            <td class="campoNome">
+                <span ng-if="!editavel">{{dado.nome}}</span>
+                <form ng-show="editavel">
+                    <input type="text" ng-value="dado.nome"></input>
+                    <button ng-click="">ConfirmarEdicao</button>
+                    <button ng-click="editavel=!editavel">CancelarEdicao</button>
+                </form>
+            </td>
+            <td class="campoAcoes"><button ng-click="editavel=!editavel">Editar</button></td>
+        </tr>
+    </tbody>
+</table>
