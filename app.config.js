@@ -34,6 +34,9 @@ angular
         when('/testeEditableText',{
           template:'<phonecat-app.teste-editable-text></phonecat-app.teste-editable-text>'
         }).
+        when('/testeNgTable',{
+          template:'<phonecat-app.teste-ng-table></phonecat-app.teste-ng-table>'
+        }).
         otherwise('/phones');
 
         $locationProvider.html5Mode(true).hashPrefix('');

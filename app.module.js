@@ -17,5 +17,6 @@ angular.module('phonecatApp', [
     'ui.router',
     'phonecatApp.UiRoute',
     'phonecatApp.testeWebSocket',
-    'phonecatApp.testeEditableText'
+    'phonecatApp.testeEditableText',
+    'phonecatApp.testeNgTable'
 ]);
