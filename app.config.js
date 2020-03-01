@@ -37,6 +37,9 @@ angular
         when('/testeNgTable',{
           template:'<phonecat-app.teste-ng-table></phonecat-app.teste-ng-table>'
         }).
+        when('/testeForm',{
+          template:'<phonecat-app.teste-form></phonecat-app.teste-form>'
+        }).
         otherwise('/phones');
 
         $locationProvider.html5Mode(true).hashPrefix('');
