@@ -4,17 +4,18 @@
         controllerAs: 'testeFormController',
         templateUrl:'app/teste-form/teste-form.template.html',
         controller: ['$scope', function testeFormController($scope){
+            // regex que valida email: ([a-z])(@)(.*[a-z])(\.com$)
             const testeFormController = this;
-            $scope.master = {}
-            $scope.update = function(user) {
-                $scope.master = angular.copy(user);
+            testeFormController.master = {}
+            testeFormController.update = function(user) {
+               testeFormController.master = angular.copy(user);
             };
     
-            $scope.reset = function() {
-                $scope.user = angular.copy($scope.master);
+            testeFormController.reset = function() {
+               testeFormController.user = angular.copy(testeFormController.master);
             };
         
-            $scope.reset();
+            testeFormController.reset();
         }]
     });
 })();
