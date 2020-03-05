@@ -19,5 +19,6 @@ angular.module('phonecatApp', [
     'phonecatApp.testeWebSocket',
     'phonecatApp.testeEditableText',
     'phonecatApp.testeNgTable',
-    'phonecatApp.testeForm'
+    'phonecatApp.testeForm',
+    'phonecatApp.testePolyline'
 ]);

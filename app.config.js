@@ -40,6 +40,9 @@ angular
         when('/testeForm',{
           template:'<phonecat-app.teste-form></phonecat-app.teste-form>'
         }).
+        when('/testePolyline',{
+          template:'<phonecat-app.teste-polyline></phonecat-app.teste-polyline>'
+        }).
         otherwise('/phones');
 
         $locationProvider.html5Mode(true).hashPrefix('');

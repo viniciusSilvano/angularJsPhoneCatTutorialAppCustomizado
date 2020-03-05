@@ -1,0 +1,7 @@
+<h1>Teste Polyline</h1>
+
+{{$ctrl.points3}}
+<button ng-click="$ctrl.zoomIn();">Zoom in</button>
+<svg width=500px height=500px>
+    <polyline ng-attr-points="{{$ctrl.points}}" points="10,0 10,10" style="fill:none;stroke:black;stroke-width:3" />
+</svg>
