@@ -9,6 +9,9 @@
             vm.zoomIn = zoomIn;
             vm.zoomOut = zoomOut;
             vm.points = "10,10,20,0, 30,0, 30,0, 40,0, 40,0, 50,0, 50,0, 60,10, 120,0, 360,0, 1280,0";
+            vm.svgStyle = {
+                left: '10%'
+            }
             
             //vm.points3 = vm.points2.toString().split(',');
 
