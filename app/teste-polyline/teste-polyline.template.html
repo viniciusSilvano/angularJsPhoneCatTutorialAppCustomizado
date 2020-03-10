@@ -1,9 +1,12 @@
 <h1>Teste Polyline</h1>
 
 <div style="display: block;">
-    <svg ng-style="$ctrl.svgStyle" width=1200px; height=500px>
-        <polyline ng-attr-points="{{$ctrl.points}}" points="10,0 10,10" style="fill:none;stroke:black;stroke-width:3" />
-    </svg>
+    <div>
+        <svg ng-style="$ctrl.svgStyle" width=1200px; height=60px>
+            <line x1="250" y1="0" x2="250" y2="60" style="stroke:rgb(255,0,0);stroke-width:2"/>
+            <polyline ng-attr-points="{{$ctrl.points}}" points="10,0 10,10" style="position:relative;top:25%;bottom:25%;fill:none;stroke:black;stroke-width:3" />
+        </svg>
+    </div>
 </div>
 <div>
     <button ng-click="$ctrl.zoomIn();">Zoom in</button>
