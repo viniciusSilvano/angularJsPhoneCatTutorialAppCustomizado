@@ -1,80 +1,88 @@
 <html ng-app="phonecatApp">
-    <head>        
-        <base href="/">
-        <meta charset="UTF-8"/>
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
 
-        <!--Angular-->
-        <script src="node_modules/angular/angular.min.js"></script>
-        <script src="node_modules/angular-route/angular-route.min.js"></script>
-        <script src="node_modules/angular-resource/angular-resource.min.js"></script>
-        <!--bootstrap-->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <!--ui-bootstrap-->
-        <link href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
-        <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
-        <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
-        <!--ng-table-->
-        <link rel="stylesheet" href="node_modules/ng-table/bundles/ng-table.min.css"/>
-        <script src="node_modules/ng-table/bundles/ng-table.min.js"></script>
-        <!-- ui.router -->
-        <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
-        <!--Modules-->
-        <script src="app.module.js"></script>
-        <script src="app/phone-list/phone-list.module.js"></script>
-        <script src="phone-detail/phone-detail.module.js"></script>
-        <script src="app/phones/phones-objects-module.js"></script>
-        <script src="teste/teste.module.js"></script>
-        <script src="app/core/phone/phone.module.js"></script>
-        <script src="app/core/core.module.js"></script>
-        <!--Testes -->
-            <script src="app/teste-events-ON/main-test-filho/main-teste-filho.module.js"></script>
-            <script src="app/teste-events-ON/main-test.module.js"></script>
-            <script src="app/teste-diretivas/teste-diretiva.module.js"></script>
-            <script src="app/window-test/window-test.module.js"></script>
-            <script src="app/teste-paginacao/teste-paginacao.module.js"></script>
-            <script src="app/teste-angular-ui-router/ui-route.module.js"></script>
-            <script src="app/teste-web-socket/teste-web-socket.module.js"></script>
-            <script src="app/teste-editable-text/teste-editable-text.module.js"></script>
-            <script src="app/teste-ng-table/teste-ng-table.module.js"></script>
-            <script src="app/teste-form/teste-form.module.js"></script>
-            <script src="app/teste-polyline/teste-polyline.module.js"></script>
-        <!--Components-->
-        <script src="app/phone-list/phone-list.component.js"></script>
-        <script src="phone-detail/phone-detail.component.js"></script>
-            <!--Testes -->
-            <script src="teste/teste.component.js"></script>
-            <script src="app/teste-events-ON/main-test-filho/main-teste-filho.component.js"></script>
-            <script src="app/teste-events-ON/main-test.component.js"></script>
-            <script src="app/teste-diretivas/teste-diretiva.component.js"></script>
-            <script src="app/window-test/window-test.component.js"></script>
-            <script src="app/teste-paginacao/teste-paginacao.component.js"></script>
-            <script src="app/teste-angular-ui-router/ui-route.component.js"></script>
-            <script src="app/teste-web-socket/teste-web-socket.component.js"></script>
-            <script src="app/teste-editable-text/teste-editable-text.component.js"></script>
-            <script src="app/teste-ng-table/teste-ng-table.component.js"></script>
-            <script src="app/teste-form/teste-form.component.js"></script>
-            <script src="app/teste-polyline/teste-polyline.component.js"></script>
-        <!--Factory-->
-        <script src="phone-detail/phone-detail-factory.js"></script>
-        <script src="app/phones/phones-factory.js"></script>
-        <script src="app/core/phone/phone.service.js"></script>
-            <!--Testes-->
-            <script src="app/teste-storage/teste-storage.factory.js"></script>
-            <script src="app/window-test/window-test.factory.js"></script>
-        <!--Directives-->
-            <!--Testes-->
-            <script src="app/teste-form/teste-form-email.directive.js"></script>
-        <!--App config-->
-        <script src="app.config.js"></script>
-        <!-- filters -->
-        <script src="app/core/checkmark/checkmark.filter.js"></script>
-
-
-    </head>
-    <body> 
-        <h1>Hello World</h1>
-        <ui-view></ui-view>
-        <div ng-view>
-        </div>
-    </body>
+    <!--Angular-->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+    <!--bootstrap-->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!--ui-bootstrap-->
+    <link href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" />
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <!--ng-table-->
+    <link
+      rel="stylesheet"
+      href="node_modules/ng-table/bundles/ng-table.min.css"
+    />
+    <script src="node_modules/ng-table/bundles/ng-table.min.js"></script>
+    <!-- ui.router -->
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <!--Modules-->
+    <script src="app.module.js"></script>
+    <script src="app/phone-list/phone-list.module.js"></script>
+    <script src="phone-detail/phone-detail.module.js"></script>
+    <script src="app/phones/phones-objects-module.js"></script>
+    <script src="teste/teste.module.js"></script>
+    <script src="app/core/phone/phone.module.js"></script>
+    <script src="app/core/core.module.js"></script>
+    <!--Modules Testes -->
+    <script src="app/teste-events-ON/main-test-filho/main-teste-filho.module.js"></script>
+    <script src="app/teste-events-ON/main-test.module.js"></script>
+    <script src="app/teste-diretivas/teste-diretiva.module.js"></script>
+    <script src="app/window-test/window-test.module.js"></script>
+    <script src="app/teste-paginacao/teste-paginacao.module.js"></script>
+    <script src="app/teste-angular-ui-router/ui-route.module.js"></script>
+    <script src="app/teste-web-socket/teste-web-socket.module.js"></script>
+    <script src="app/teste-editable-text/teste-editable-text.module.js"></script>
+    <script src="app/teste-ng-table/teste-ng-table.module.js"></script>
+    <script src="app/teste-form/teste-form.module.js"></script>
+    <script src="app/teste-polyline/teste-polyline.module.js"></script>
+    <!--Teste java Project modules-->
+    <script src="app/teste-java-project/teste-java-project.module.js"></script>
+    <script src="app/teste-java-project/livro/livro.module.js"></script>
+    <!--Components-->
+    <script src="app/phone-list/phone-list.component.js"></script>
+    <script src="phone-detail/phone-detail.component.js"></script>
+    <!--Components Testes -->
+    <script src="teste/teste.component.js"></script>
+    <script src="app/teste-events-ON/main-test-filho/main-teste-filho.component.js"></script>
+    <script src="app/teste-events-ON/main-test.component.js"></script>
+    <script src="app/teste-diretivas/teste-diretiva.component.js"></script>
+    <script src="app/window-test/window-test.component.js"></script>
+    <script src="app/teste-paginacao/teste-paginacao.component.js"></script>
+    <script src="app/teste-angular-ui-router/ui-route.component.js"></script>
+    <script src="app/teste-web-socket/teste-web-socket.component.js"></script>
+    <script src="app/teste-editable-text/teste-editable-text.component.js"></script>
+    <script src="app/teste-ng-table/teste-ng-table.component.js"></script>
+    <script src="app/teste-form/teste-form.component.js"></script>
+    <script src="app/teste-polyline/teste-polyline.component.js"></script>
+    <!--Teste Java Project Components-->
+    <script src="app/teste-java-project/teste-java-project.component.js"></script>
+    <script src="app/teste-java-project/livro/livro.component.js"></script>
+    <!--Factory-->
+    <script src="phone-detail/phone-detail-factory.js"></script>
+    <script src="app/phones/phones-factory.js"></script>
+    <script src="app/core/phone/phone.service.js"></script>
+    <!--Factory Testes-->
+    <script src="app/teste-storage/teste-storage.factory.js"></script>
+    <script src="app/window-test/window-test.factory.js"></script>
+    <!--Directives-->
+    <!--Directives Testes-->
+    <script src="app/teste-form/teste-form-email.directive.js"></script>
+    <!--App config-->
+    <script src="app.config.js"></script>
+    <!-- filters -->
+    <script src="app/core/checkmark/checkmark.filter.js"></script>
+  </head>
+  <body>
+    <ui-view></ui-view>
+    <div ng-view></div>
+  </body>
 </html>
