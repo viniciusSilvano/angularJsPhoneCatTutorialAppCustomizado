@@ -1,9 +1,13 @@
 <h1>Java Project Livros</h1>
 <table class="table">
   <thead>
-    <th>nome</th>
+    <tr>
+      <th>nome</th>
+    </tr>
   </thead>
   <tbody>
-    <td>Teste</td>
+    <tr ng-repeat="livro in $ctrl.livros">
+      <td>{{livro.nome}}</td>
+    </tr>
   </tbody>
 </table>

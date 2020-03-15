@@ -17,6 +17,7 @@
               .get("http://localhost:8080/javaTeste/livro")
               .then(response => {
                 console.log("livros: ", response);
+                vm.livros = response.data;
               }),
               error => {
                 console.log("Erro ao recuperar livros");
