@@ -56,6 +56,10 @@ angular.module("phonecatApp").config([
         template:
           "<phonecat-app.teste-java-project.livro></phonecat-app.teste-java-project.livro>"
       })
+      .when("/testeTreeTable", {
+        template:
+          "<phonecat-app.teste-tree-table></phonecat-app.teste-tree-table>"
+      })
       .otherwise("/phones");
 
     $locationProvider.html5Mode(true).hashPrefix("");

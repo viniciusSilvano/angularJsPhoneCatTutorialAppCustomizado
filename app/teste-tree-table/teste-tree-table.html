@@ -1,0 +1,127 @@
+<h1>Teste Tree Table</h1>
+<style>
+    .minhaBordaCustomizada{
+        border-bottom: 1px solid rgb(236, 236, 236);
+    }
+</style>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>nuke</th>
+            <th>duke</th>
+            <th>luke</th>
+            <th>dado 1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><div class="minhaBordaCustomizada" style="height: 225px;">nuke reina</div></td>
+            <td>
+                <div class="minhaBordaCustomizada" style="height: 135px;">
+                    <div>
+                        <label>nome: </label>
+                        <span>Duke corre</span>
+                    </div>
+                    <div>
+                        <label>limite: </label>
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="minhaBordaCustomizada" style="height: 45px;">
+                    <div>
+                        <label>nome: </label>
+                        <span>muito</span>
+                    </div>
+                    <div>
+                        <label>limite: </label>
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="minhaBordaCustomizada" style="height: 45px;">
+                    <div>
+                        <label>nome: </label>
+                        <span>muito</span>
+                    </div>
+                    <div>
+                        <label>limite: </label>
+                        <span>2</span>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="minhaBordaCustomizada">
+                    <label>nome: </label>
+                    <span>Luke</span>>
+                </div>
+                <div class="minhaBordaCustomizada">
+                    <label>nome: </label>
+                    <span>é</span>>
+                </div>
+                <div class="minhaBordaCustomizada">
+                    <label>nome: </label>
+                    <span>skywalker</span>>
+                </div>
+            </td>
+            <td>
+                <div class="minhaBordaCustomizada" style="height: 45px;">dado 1</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nuke</th>
+            <th>Duke</th>
+            <th>Luke</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td ng-attr-rowspan="{{$ctrl.dadoTeste2.subunidades.length}}">
+                <span>{{$ctrl.dadoTeste2.unidade.nome}}</span>
+                <span>{{$ctrl.dadoTeste2.unidade.limite}}</span>
+            </td>
+            <td ng-attr-rowspan="{{$ctrl.dadoTeste2.nucleos.length}}">
+                <div ng-repeat="subunidade in $ctrl.dadoTeste2.subunidades">
+                    <span>{{subunidadenome}}</span>
+                    <span>{{subunidade.limite}}</span>
+                </div>
+            </td>
+            <td>
+                <div ng-repeat="nucleo in $ctrl.dadoTeste2.nucleos"></div>
+                    <span>{{nucleo.nome}}</span>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script type="text/ng-template"  id="tree_item.html">
+    <span>{{dado.nome}}</span>
+    <span>{{dado.limite}}</span>
+ </script>
+<!--<table class="table table-striped">
+    <thead>
+       <tr>
+           <th style="width:30px;">Um dado qualquer</th>
+           <th style="width:auto">Data tree</th>
+       </tr>
+   </thead>
+   <tbody ng-repeat="dado in $ctrl.dadoTeste" ng-include="'tree_item.html'">
+   
+   </tbody>
+</table>
+
+<script type="text/ng-template"  id="tree_item.html">
+    <tr style="width:100%">
+        <td>Teste</td>
+        <td>
+            {{dado.limite}}
+            <div id="expanded-data">
+                <table class="table table-striped" id="nested-table">
+                    <div ng-repeat="dado in dado.estruturasFilhas" ng-include="'tree_item.html'"></div>
+                </table>
+            </div>
+        </td>
+    </tr>
+ </script>-->

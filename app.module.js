@@ -21,5 +21,6 @@ angular.module("phonecatApp", [
   "phonecatApp.testeNgTable",
   "phonecatApp.testeForm",
   "phonecatApp.testePolyline",
-  "phonecatApp.testeJavaProject"
+  "phonecatApp.testeJavaProject",
+  "phonecatApp.testeTreeTable"
 ]);
