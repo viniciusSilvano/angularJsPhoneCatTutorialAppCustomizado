@@ -8,6 +8,7 @@
         function testeNgTableController($scope,NgTableParams){
             const vm = this;
             vm.isChecked = isChecked;
+            vm.valorAnteriorCheckAll = false;
             vm.data = [{name: "Moroni", age: 50, checked: false},
             {name: "Tiancum", age: 43, checked: true},
             {name: "Jacob", age: 27, checked: false}];
@@ -39,10 +40,12 @@
             function validarCheckAll(){
                 var element = angular.element(document.querySelector('#meuCheckAll'));
                 if(element !== undefined && element.length > 0){
-                    if(element[0].checked === true){
-                        alterarCheckes(true);
-                    }else{
-                        alterarCheckes(false);
+                    if(vm.valorAnteriorCheckAll !== element[0].checked){
+                        if(element[0].checked){
+                            alterarCheckes(true);
+                        }else{
+                            alterarCheckes(false);
+                        }
                     }
                 }
             }
@@ -51,6 +54,7 @@
                 vm.data.forEach(specificData => {
                     specificData.checked = valor;
                 });
+                vm.valorAnteriorCheckAll = valor;
             }
             
             function isChecked(user){
