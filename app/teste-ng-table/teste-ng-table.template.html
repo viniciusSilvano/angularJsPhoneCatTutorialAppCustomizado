@@ -1,10 +1,45 @@
+<style>
+  table{
+    margin-bottom: 2%;
+  }
+</style>
 <h1>Teste NgTable</h1>
-
+<script type="text/ng-template" id="checkboxheader.html">
+  <input id="meuCheckAll" type="checkbox" ng-model="checkboxes.checked">
+</script>
 <table ng-table="$ctrl.tableParams" class="table" show-filter="true">
-    <tr ng-repeat="user in $data">
-      <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+  <tr ng-repeat="user in $ctrl.data">
+    <td data-header="'checkboxheader.html'">
+      <input type="checkbox" ng-model="user.checked">
+    </td>
+    <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+      {{user.name}}</td>
+    <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
+      {{user.age}}</td>
+  </tr>
+</table>
+<table ng-table="$ctrl.tableParams" class="table">
+    <thead>
+      <th>Checked</th>
+      <th class="ng-table-header sortable" ng-class="''">
+        <span class="ng-table-header" ng-class="{'sort-desc': true}">Name</span></th>
+      <th>Age</th>
+    </thead>
+    <tr ng-repeat="user in $ctrl.data">
+      <td>
+        <input type="checkbox" ng-model="user.checkbox" ng-change="$ctrl.isChecked(user)"/>
+      </td>
+      <td>
         {{user.name}}</td>
-      <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
+      <td>
         {{user.age}}</td>
     </tr>
-  </table>
+</table>
+<table ng-table="$ctrl.tableParams" class="table" show-filter="true">
+  <tr ng-repeat="user in $ctrl.data">
+    <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+      {{user.name}}</td>
+    <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
+      {{user.age}}</td>
+  </tr>
+</table>

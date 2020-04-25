@@ -62,7 +62,11 @@ angular.module("phonecatApp").config([
       })
       .otherwise("/phones");
 
-    $locationProvider.html5Mode(true).hashPrefix("");
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false,
+      });
+    $locationProvider.hashPrefix('');
 
     $stateProvider.state({
       name: "testeRouteUi",
