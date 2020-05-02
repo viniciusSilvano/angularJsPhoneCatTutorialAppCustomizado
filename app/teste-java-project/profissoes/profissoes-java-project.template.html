@@ -1,0 +1,9 @@
+<h1>Profissões</h1>
+
+<table ng-table="$ctrl.profissoesDataTable" class="table">
+    <tr ng-repeat="profissional in $data">
+        <td data-title="'Nome'">{{profissional.nome}}</td>
+        <td data-title="'Idade'">{{profissional.idade}}</td>
+        <td data-title="'Função'">{{profissional.funcao}}</td>
+    </tr>
+</table>
