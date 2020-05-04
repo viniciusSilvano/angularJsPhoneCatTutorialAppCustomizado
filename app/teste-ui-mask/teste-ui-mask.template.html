@@ -1,0 +1,8 @@
+<input type="text" name="campoContato" class="form-control" ng-model="$ctrl.interceptacao.contato" ui-mask="(?9?9)?9?9?9?9?9-?9?9?9?9" ui-options="{addDefaultPlaceholder: false, allowInvalidValue: true}" repeat="20" restrict="reject"  
+ng-disabled="!$ctrl.interceptacao.id || $ctrl.disabled || $ctrl.interceptacao.tipoComunicacao.descricao == 'SMS'" sis-desabilitar-operacao="$ctrl.operacao">
+
+<div class="col-sm-6 form-group">
+    <label for="contato">Nº Contato</label>
+    <input  id="contato" type="text" ng-model="$ctrl.model.contato"
+            mask="(99)9?9999-9999" restrict="reject" class="form-control"/>
+</div>
