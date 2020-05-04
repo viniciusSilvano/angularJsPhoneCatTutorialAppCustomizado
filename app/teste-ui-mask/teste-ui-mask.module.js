@@ -1,5 +1,5 @@
 (function() {
     "use strict";
-    angular.module("phonecatApp.testeUIMask", []);
+    angular.module("phonecatApp.testeUiMask", []);
   })();
   

@@ -64,6 +64,10 @@ angular.module("phonecatApp").config([
         template:
           "<phonecat-app.teste-tree-table></phonecat-app.teste-tree-table>"
       })
+      .when("/testeUiMask",{
+        template:
+          "<phonecat-app.teste-ui-mask></phonecat-app.teste-ui-mask>"
+      })
       .otherwise("/phones");
 
     $locationProvider.html5Mode({

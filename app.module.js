@@ -23,4 +23,6 @@ angular.module("phonecatApp", [
   "phonecatApp.testePolyline",
   "phonecatApp.testeJavaProject",
   "phonecatApp.testeTreeTable",
+  "ui.mask",
+  "phonecatApp.testeUiMask"
 ]);
