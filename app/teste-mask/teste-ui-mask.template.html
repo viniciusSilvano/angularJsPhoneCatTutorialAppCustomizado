@@ -1,0 +1,39 @@
+<form name="meuForm">
+    <div class="col-sm-6 form-group">
+        <label for="campoContato">Nº Contato</label>
+        {{$ctrl.interceptacao.contato}}
+        <input 
+            type="text" 
+            name="campoContato" 
+            class="form-control" 
+            ng-model="$ctrl.interceptacao.contato" 
+            ng-attr-ui-mask="{{$ctrl.interceptacao.contato.length < 12 ? '(?9?9)?9?9?9?9?9-?9?9?9?9?9': undefined}}" 
+            ui-options="{addDefaultPlaceholder: false, allowInvalidValue: true}"   
+        >
+    </div>
+
+    <div class="col-sm-6 form-group">
+        <label for="contato">Nº Contato</label>
+        <input  
+            id="contato" 
+            type="text" 
+            ng-model="$ctrl.model.contato"
+            ui-mask="(99)9?9999-9999" 
+            class="form-control"
+        />
+    </div>
+
+    <div class="col-sm-6 form-group">
+        <label for="contato2">Nº contato</label>
+        <input
+            id="contato2"
+            name="contato2"
+            type="text"
+            ng-model="$ctrl.mask.contato"
+            ng-attr-mask="{{$ctrl.isPhoneValid($ctrl.mask.contato) ? '(?9?9)?9?9?9?9?-?9?9?9?9?9' : undefined}}"
+            limit="false"
+            title="teste"
+        />
+    </div>
+    {{meuForm.$valid}}
+</form>
