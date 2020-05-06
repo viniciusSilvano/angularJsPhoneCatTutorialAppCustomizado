@@ -35,5 +35,18 @@
             title="teste"
         />
     </div>
+    
+    <div class="col-sm-6 form-group">
+        <label for="contato2">Nº contato</label>
+        <input
+            id="contato2"
+            name="contato2"
+            type="text"
+            ng-model="$ctrl.mask.contato"
+            ng-attr-mask="{{$ctrl.isPhoneValid($ctrl.mask.contato) ? '(?9?9)?9?9?9?9?-?9?9?9?9?9' : undefined}}"
+            limit="false"
+            title="teste"
+        />
+    </div>
     {{meuForm.$valid}}
 </form>
