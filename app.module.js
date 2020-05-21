@@ -25,5 +25,6 @@ angular.module("phonecatApp", [
   "phonecatApp.testeTreeTable",
   "ngMask",
   "ui.mask",
-  "phonecatApp.testeUiMask"
+  "phonecatApp.testeUiMask",
+  "phonecatApp.testeUibModal"
 ]);
