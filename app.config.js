@@ -72,6 +72,10 @@ angular.module("phonecatApp").config([
         template:
           "<phonecat-app.teste-uib-modal></phonecat-app.teste-uib-modal>"
       })
+      .when("/testeWebSocketVideo",{
+        template:
+          "<phonecat-app.teste-web-socket-video></phonecat-app.teste-web-socket-video>"
+      })
       .otherwise("/phones");
 
     $locationProvider.html5Mode({
